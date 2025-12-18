@@ -1,4 +1,4 @@
-function UserCard({ name, email }) {
+function UserCard({ name, email, company }) {
     return (
         <div style={{
             border: "1px solid #ddd",
@@ -6,8 +6,9 @@ function UserCard({ name, email }) {
             borderRadius: "6px",
             marginBottom: "10px"
         }}>
-            <h3>{name}</h3>
-            <p>{email}</p>
+            <h3>Name: {name}</h3>
+            <p>Email: {email}</p>
+            <p>Company: {company}</p>
         </div>
     );
 }
